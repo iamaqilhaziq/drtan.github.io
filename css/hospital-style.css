@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+
+.clinical {
+    overflow-x: auto;
+}
+
+.clinical tbody tr:nth-child(odd) {
+	background-color: #FFC2C7;
+}
+
+.clinical tbody tr:nth-child(even) {
+	background-color: white;
+}
+
+.clinical td {
+    padding: 10px 15px;
+}
+
+.clinical th {
+    text-align: center;
+    padding: 10px 15px;
+	white-space: nowrap;
+}
+
+.whitescreen {
+    width: 90%;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+.whitescreen .details {
+    cursor: pointer;
+}
+
+.whitescreen a.btn {
+	padding:5px;
+	border-radius:4px;
+	width: 100%;
+}
+
+.whitescreen button.btn {
+	padding:5px;
+	border-radius:4px;
+	width: 100%;
+	pointer-events: none;
+}
+
+#btnNew, #btnNew:hover {
+    padding: 10px 20px;
+    margin: 0;
+    outline: none;
+    border: 1px solid #FF0318;
+    background: #FF0318;
+    color: white;
+}
+
+#pagetitle {
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+#pagetitle h2 {
+    font-weight: bold;
+    color: #6f6f6f;
+	font-size: 1.8rem;
+	margin-bottom: 0;
+}
+
+#pagetitle #group{
+	text-align: right;
+}
+
+#pagetitle.labelheader{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 90%;
+    margin: 0px auto;
+}
+
+@media(max-width: 768px)
+{
+	.labelheader
+	{
+		flex-direction: column !important;
+	}
+
+	#group
+	{
+		width: 100% !important;
+		text-align: center!important;
+		margin-top: 20px;
+	}
+}

@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BOOK ONLINE PAGE | DR TAN LAN ENG</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/header-style.css">
+<link rel="stylesheet" href="css/auth-style.css">
+<link rel="stylesheet" href="css/reservation-style.css">
+<link rel="stylesheet" href="css/appointment-style.css">
+<link rel="stylesheet" href="css/jquery-ui.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="images/ic_launcher.png" type="image/png">
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+</head>
+<body>
+<header class="l-header js-fixed-header">
+	<div class="p-header-pc u-hidden-sp">
+		<div class="p-header-pc__logo-wrap">
+			<div class="header__logo">
+				<div id="logo-main">
+					<a href="index.html" class="header__logo-mark">
+						<img src="images/logo.png" alt="DR TAN LAN ENG" class="header__logo-img">
+					</a>
+				</div>
+			</div>
+			<button class="header__menu-button" id="js-global-nav-btn">
+				<div class="menu-trigger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+		</div>
+		<div class="p-header-pc__links-wrap">
+			<ul class="p-header-pc__links">
+				<li><a href="index.html">home</a></li>
+				<li><a href="contact.html">contact us</a></li>
+				<li><a href="faq.html">faq</a></li>
+				<li><a href="beginner.html">for first-timers</a></li>
+				<li><a href="login.html">login</a></li>
+			</ul>
+		</div>
+		<div class="global-menu-button">
+			<div class="global-menu-button__buttons">
+				<a href="appointment.html" class="global-menu-button__button reservation">
+					<span class="global-menu-button__button-text">Online reservation</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</header>
+<script>
+$(document).ready(function() {
+  $("#js-global-nav-btn").on("click", function() {
+	if($("#js-global-nav-btn").hasClass('is-show-nav')){
+		$("#js-global-nav-btn").removeClass("is-show-nav");
+		$(".p-header-pc__links-wrap").removeClass("is-show");
+	}
+	else {
+		$("#js-global-nav-btn").addClass("is-show-nav");
+		$(".p-header-pc__links-wrap").addClass("is-show");
+	}
+  });
+});
+</script>
+<div class="pagecontent">
+	<div id="pagetitle">
+		<h2>BOOK ONLINE</h2>
+	</div>
+	<div class="col-12">
+		<div class="text-center text-muted mb-3">
+			<div class="small">please select your preferred time zone.</div>
+		</div>
+	</div>
+	<div class="p-3">
+		<div id="datepicker" class="hasDatepicker"><div class="ui-datepicker-inline ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" style="display: block;"><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a class="ui-datepicker-prev ui-corner-all ui-state-disabled" title="Prev"><span class="ui-icon ui-icon-circle-triangle-w">Prev</span></a><a class="ui-datepicker-next ui-corner-all" data-handler="next" data-event="click" title="Next"><span class="ui-icon ui-icon-circle-triangle-e">Next</span></a><div class="ui-datepicker-title"><span class="ui-datepicker-month">May</span>&nbsp;<span class="ui-datepicker-year">2023</span></div></div><table class="ui-datepicker-calendar"><thead><tr><th scope="col" class="ui-datepicker-week-end"><span title="Sunday">Sun</span></th><th scope="col"><span title="Monday">Mon</span></th><th scope="col"><span title="Tuesday">Tue</span></th><th scope="col"><span title="Wednesday">Wed</span></th><th scope="col"><span title="Thursday">Thu</span></th><th scope="col"><span title="Friday">Fri</span></th><th scope="col" class="ui-datepicker-week-end"><span title="Saturday">Sat</span></th></tr></thead><tbody><tr><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">30</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">1</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">2</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">3</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">4</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">5</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">6</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">7</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">8</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">9</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">10</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">11</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">12</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled  ui-datepicker-today"><span class="ui-state-default">13</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-days-cell-over  ui-datepicker-current-day" data-handler="selectDay" data-event="click" data-month="4" data-year="2023"><a class="ui-state-default ui-state-active" href="#" aria-current="true" data-date="14">14</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2023"><a class="ui-state-default" href="#" aria-current="false" data-date="15">15</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2023"><a class="ui-state-default" href="#" aria-current="false" data-date="16">16</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2023"><a class="ui-state-default" href="#" aria-current="false" data-date="17">17</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2023"><a class="ui-state-default" href="#" aria-current="false" data-date="18">18</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2023"><a class="ui-state-default" href="#" aria-current="false" data-date="19">19</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="4" data-year="2023"><a class="ui-state-default" href="#" aria-current="false" data-date="20">20</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="4" data-year="2023"><a class="ui-state-default" href="#" aria-current="false" data-date="21">21</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2023"><a class="ui-state-default" href="#" aria-current="false" data-date="22">22</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2023"><a class="ui-state-default" href="#" aria-current="false" data-date="23">23</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2023"><a class="ui-state-default" href="#" aria-current="false" data-date="24">24</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2023"><a class="ui-state-default" href="#" aria-current="false" data-date="25">25</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2023"><a class="ui-state-default" href="#" aria-current="false" data-date="26">26</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="4" data-year="2023"><a class="ui-state-default" href="#" aria-current="false" data-date="27">27</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="4" data-year="2023"><a class="ui-state-default" href="#" aria-current="false" data-date="28">28</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2023"><a class="ui-state-default" href="#" aria-current="false" data-date="29">29</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2023"><a class="ui-state-default" href="#" aria-current="false" data-date="30">30</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2023"><a class="ui-state-default" href="#" aria-current="false" data-date="31">31</a></td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">1</span></td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">2</span></td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">3</span></td></tr></tbody></table></div></div>
+	</div>
+	<div class="select-time py-3 px-3 ng-star-inserted">
+		<div class="container" id="section-timezone">
+			<div class="d-flex flex-wrap ng-star-inserted" id="timelist">
+				<a id="time_11" class="tag-item m-1 ng-star-inserted">02:30-02:45</a>
+			
+				<a id="time_12" class="tag-item m-1 ng-star-inserted">02:45-03:00</a>
+			
+				<a id="time_13" class="tag-item m-1 ng-star-inserted">03:00-03:15</a>
+			
+				<a id="time_14" class="tag-item m-1 ng-star-inserted">03:15-03:30</a>
+			
+				<a id="time_15" class="tag-item m-1 ng-star-inserted">03:30-03:45</a>
+			
+				<a id="time_16" class="tag-item m-1 ng-star-inserted">03:45-04:00</a>
+			
+				<a id="time_17" class="tag-item m-1 ng-star-inserted">04:00-04:15</a>
+			
+				<a id="time_18" class="tag-item m-1 ng-star-inserted">04:15-04:30</a>
+			
+				<a id="time_19" class="tag-item m-1 ng-star-inserted">04:30-04:45</a>
+			
+				<a id="time_20" class="tag-item m-1 ng-star-inserted">04:45-05:00</a>
+			
+				<a id="time_21" class="tag-item m-1 ng-star-inserted">05:00-05:15</a>
+			
+				<a id="time_22" class="tag-item m-1 ng-star-inserted">05:15-05:30</a>
+			
+				<a id="time_23" class="tag-item m-1 ng-star-inserted">05:30-05:45</a>
+			
+				<a id="time_24" class="tag-item m-1 ng-star-inserted">05:45-06:00</a>
+			
+				<a id="time_25" class="tag-item m-1 ng-star-inserted">06:00-06:15</a>
+			
+				<a id="time_26" class="tag-item m-1 ng-star-inserted">06:15-06:30</a>
+			
+				<a id="time_27" class="tag-item m-1 ng-star-inserted">06:30-06:45</a>
+			
+				<a id="time_28" class="tag-item m-1 ng-star-inserted">06:45-07:00</a>
+			
+				<a id="time_29" class="tag-item m-1 ng-star-inserted">07:00-07:15</a>
+			
+				<a id="time_30" class="tag-item m-1 ng-star-inserted">07:15-07:30</a>
+			
+				<a id="time_31" class="tag-item m-1 ng-star-inserted">07:30-07:45</a>
+			
+				<a id="time_32" class="tag-item m-1 ng-star-inserted">07:45-08:00</a>
+			
+				<a id="time_33" class="tag-item m-1 ng-star-inserted">08:00-08:15</a>
+			
+				<a id="time_34" class="tag-item m-1 ng-star-inserted">08:15-08:30</a>
+			
+				<a id="time_35" class="tag-item m-1 ng-star-inserted">08:30-08:45</a>
+			
+				<a id="time_36" class="tag-item m-1 ng-star-inserted">08:45-09:00</a>
+			
+				<a id="time_37" class="tag-item m-1 ng-star-inserted">09:00-09:15</a>
+			
+				<a id="time_38" class="tag-item m-1 ng-star-inserted">09:15-09:30</a>
+			
+				<a id="time_39" class="tag-item m-1 ng-star-inserted">09:30-09:45</a>
+			
+				<a id="time_40" class="tag-item m-1 ng-star-inserted">09:45-10:00</a>
+			
+				<a id="time_41" class="tag-item m-1 ng-star-inserted">10:00-10:15</a>
+			
+				<a id="time_42" class="tag-item m-1 ng-star-inserted">10:15-10:30</a>
+			
+				<a id="time_43" class="tag-item m-1 ng-star-inserted">10:30-10:45</a>
+			
+				<a id="time_44" class="tag-item m-1 ng-star-inserted">10:45-11:00</a>
+			
+				<a id="time_45" class="tag-item m-1 ng-star-inserted">11:00-11:15</a>
+			
+				<a id="time_46" class="tag-item m-1 ng-star-inserted">11:15-11:30</a>
+			
+				<a id="time_47" class="tag-item m-1 ng-star-inserted">11:30-11:45</a>
+			
+				<a id="time_48" class="tag-item m-1 ng-star-inserted">11:45-12:00</a>
+			
+				<a id="time_49" class="tag-item m-1 ng-star-inserted">12:00-12:15</a>
+			
+				<a id="time_50" class="tag-item m-1 ng-star-inserted">12:15-12:30</a>
+			
+				<a id="time_51" class="tag-item m-1 ng-star-inserted">12:30-12:45</a>
+			
+				<a id="time_52" class="tag-item m-1 ng-star-inserted">12:45-13:00</a>
+			
+				<a id="time_53" class="tag-item m-1 ng-star-inserted">13:00-13:15</a>
+			
+				<a id="time_54" class="tag-item m-1 ng-star-inserted">13:15-13:30</a>
+			
+				<a id="time_55" class="tag-item m-1 ng-star-inserted">13:30-13:45</a>
+			
+				<a id="time_56" class="tag-item m-1 ng-star-inserted">13:45-14:00</a>
+			
+				<a id="time_57" class="tag-item m-1 ng-star-inserted">14:00-14:15</a>
+			
+				<a id="time_58" class="tag-item m-1 ng-star-inserted">14:15-14:30</a>
+			
+				<a id="time_59" class="tag-item m-1 ng-star-inserted">14:30-14:45</a>
+			
+				<a id="time_60" class="tag-item m-1 ng-star-inserted">14:45-15:00</a>
+			
+				<a id="time_61" class="tag-item m-1 ng-star-inserted">15:00-15:15</a>
+			
+				<a id="time_62" class="tag-item m-1 ng-star-inserted">15:15-15:30</a>
+			
+				<a id="time_63" class="tag-item m-1 ng-star-inserted">15:30-15:45</a>
+			
+				<a id="time_64" class="tag-item m-1 ng-star-inserted">15:45-16:00</a>
+			
+				<a id="time_65" class="tag-item m-1 ng-star-inserted">16:00-16:15</a>
+			
+				<a id="time_66" class="tag-item m-1 ng-star-inserted">16:15-16:30</a>
+			
+				<a id="time_67" class="tag-item m-1 ng-star-inserted">16:30-16:45</a>
+			
+				<a id="time_68" class="tag-item m-1 ng-star-inserted">16:45-17:00</a>
+			
+				<a id="time_69" class="tag-item m-1 ng-star-inserted">17:00-17:15</a>
+			
+				<a id="time_70" class="tag-item m-1 ng-star-inserted">17:15-17:30</a>
+			
+				<a id="time_71" class="tag-item m-1 ng-star-inserted">17:30-17:45</a>
+			
+				<a id="time_72" class="tag-item m-1 ng-star-inserted">17:45-18:00</a>
+			
+				<a id="time_73" class="tag-item m-1 ng-star-inserted">18:00-18:15</a>
+			
+				<a id="time_74" class="tag-item m-1 ng-star-inserted">18:15-18:30</a>
+			
+				<a id="time_75" class="tag-item m-1 ng-star-inserted">18:30-18:45</a>
+			
+				<a id="time_76" class="tag-item m-1 ng-star-inserted">18:45-19:00</a>
+			
+				<a id="time_77" class="tag-item m-1 ng-star-inserted">19:00-19:15</a>
+			
+				<a id="time_78" class="tag-item m-1 ng-star-inserted">19:15-19:30</a>
+			
+				<a id="time_79" class="tag-item m-1 ng-star-inserted">19:30-19:45</a>
+			
+				<a id="time_80" class="tag-item m-1 ng-star-inserted">19:45-20:00</a>
+			
+				<a id="time_81" class="tag-item m-1 ng-star-inserted">20:00-20:15</a>
+			
+				<a id="time_82" class="tag-item m-1 ng-star-inserted">20:15-20:30</a>
+			</div>
+			<div class="continue mt-2">
+				<form name="form1" id="form1" method="POST" action="reserve.html" novalidate="" onSubmit="return appointmentForm()">
+					<input type="hidden" name="date" id="date" value="">
+					<input type="hidden" name="time" id="time" value="">
+					<button type="submit" class="btn btn-primary d-flex justify-content-center">
+						continue
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+</script>
+</body>
+</html>

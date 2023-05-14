@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>FLOW FOR THE FIRST TIME VISIT PAGE | DR TAN LAN ENG</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/header-style.css">
+<link rel="stylesheet" href="css/auth-style.css">
+<link rel="stylesheet" href="css/beginner-style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="images/ic_launcher.png" type="image/png">
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header class="l-header js-fixed-header">
+	<div class="p-header-pc u-hidden-sp">
+		<div class="p-header-pc__logo-wrap">
+			<div class="header__logo">
+				<div id="logo-main">
+					<a href="index.html" class="header__logo-mark">
+						<img src="images/logo.png" alt="DR TAN LAN ENG" class="header__logo-img">
+					</a>
+				</div>
+			</div>
+			<button class="header__menu-button" id="js-global-nav-btn">
+				<div class="menu-trigger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+		</div>
+		<div class="p-header-pc__links-wrap">
+			<ul class="p-header-pc__links">
+				<li><a href="index.html">home</a></li>
+				<li><a href="contact.html">contact us</a></li>
+				<li><a href="faq.html">faq</a></li>
+				<li><a href="beginner.html">for first-timers</a></li>
+				<li><a href="login.html">login</a></li>
+			</ul>
+		</div>
+		<div class="global-menu-button">
+			<div class="global-menu-button__buttons">
+				<a href="appointment.html" class="global-menu-button__button reservation">
+					<span class="global-menu-button__button-text">Online reservation</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</header>
+<script>
+$(document).ready(function() {
+  $("#js-global-nav-btn").on("click", function() {
+	if($("#js-global-nav-btn").hasClass('is-show-nav')){
+		$("#js-global-nav-btn").removeClass("is-show-nav");
+		$(".p-header-pc__links-wrap").removeClass("is-show");
+	}
+	else {
+		$("#js-global-nav-btn").addClass("is-show-nav");
+		$(".p-header-pc__links-wrap").addClass("is-show");
+	}
+  });
+});
+</script>
+<div class="pagecontent">
+	<div id="pagetitle">
+		<h2>FLOW FOR THE FIRST TIME VISIT</h2>
+	</div>
+	<div id="container">
+		<section id="contents">
+			<section id="anchor01" class="sectionTypeA01-50">
+				<h2 class="headingTypeB01">
+					<span class="num">1</span>
+					<span class="heading">reservations</span>
+				</h2>
+				<p class="lh2_0">please make a reservation for consultation through the 24-hour reservation at a time that is convenient for you.</p>
+				<h4 class="sectionHeader3s mb-8">
+					<span>how to make a reservation</span>
+				</h4>
+				<p class="lh2_0">please check the <a href="appointment.html">reservation page</a>.</p>
+			</section>
+			<section id="anchor02" class="sectionTypeA01-50">
+				<h2 class="headingTypeB01">
+					<span class="num">2</span>
+					<span class="heading">visit</span>
+				</h2>
+				<p class="lh2_0">please come at the date and time when you made a reservation.</p>
+			</section>
+			<section id="anchor03" class="sectionTypeA01-50">
+				<h2 class="headingTypeB01">
+					<span class="num">3</span>
+					<span class="heading">consultation</span>
+				</h2>
+				<p class="lh2_0">you will see a doctor. consultation is conducted to determine nutrition guidance, prescription, and future treatment plans.</p>
+			</section>
+			<section id="anchor04" class="sectionTypeA01-50">
+				<h2 class="headingTypeB01">
+					<span class="num">4</span>
+					<span class="heading">payment</span>
+				</h2>
+				<p class="lh2_0">you will be asked to pick up the medicine at a pharmacy affiliated with the clinic. please pay only with online payment.</p>
+			</section>
+		</section>
+	</div>
+</div>
+</body>
+</html>

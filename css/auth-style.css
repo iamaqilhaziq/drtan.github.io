@@ -1,0 +1,272 @@
+@charset "utf-8";
+/* CSS Document */
+
+.account-id-row, .login-attach-row {
+    margin: 0 !important;
+}
+
+.btn-area {
+    width: 80%;
+    display: inline-block;
+}
+
+.btn-next {
+    position: relative;
+}
+
+.btn-next span {
+    display: block;
+    margin-right: 20px;
+    width: 100%;
+}
+
+.btn-next:after {
+    position: absolute;
+    top: 52%;
+    right: 20px;
+    display: block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transform: rotate(45deg);
+    border-radius: 2px;
+}
+
+.btn-normal {
+    color: #fff !important;
+    background-color: #DB0013!important;
+    border-color: #DB0013!important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #ff9224!important;
+    border-color: #ff9224!important;
+}
+
+.center {
+    text-align: center;
+    justify-content: center;
+}
+
+.contents-box {
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0px 1px 4px rgb(0 0 0 / 20%);
+    background: #fff;
+	padding: 10px;
+}
+
+.contents-box .input-title, .contents-box label {
+    font-size: 14px;
+}
+
+.contents-box .row {
+    margin: 15px 0 0;
+}
+
+.formError {
+    text-align: left;
+    opacity: 1 !important;
+	z-index: 990;
+}
+
+.formError .formErrorContent {
+    color: #EE2626;
+    background: #fff;
+    font-size: 12px;
+    padding: 4px 10px 4px 10px;
+	z-index: 991
+}
+
+.formError.inline {
+    top: 0 !important;
+    left: 0 !important;
+    margin: 0 0 5px !important;
+    width: 100%;
+}
+
+.formError.inline .formErrorContent {
+    margin: 5px 0 10px;
+    border: 1px solid #e64949;
+}
+
+.formErrorContent {
+    border-radius: 5px;
+}
+
+.header {
+	color: #384D5F;
+    display: block;
+    font-weight: normal;
+    width: 100%;
+}
+
+.input-title {
+    height: 40px;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: bolder!important;
+    padding-right: 10px;
+}
+
+.login-attach-row .col-sm-8 {
+	margin: auto;
+}
+
+.login-dashed-line {
+    border-top: 1px dotted #333;
+}
+
+.mgn-b-50 {
+    margin-bottom: 50px!important;
+}
+
+.mgn-t-10 {
+    margin-top: 10px!important;
+}
+
+.password-textfield-has-password-visibility-button, input[type="password"].password-textfield-has-password-visibility-button {
+    padding-right: 48px;
+}
+
+.password-visibility-button {
+    background: transparent;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.5);
+    appearance: none;
+    height: 40px;
+    width: 40px;
+    outline: none;
+    overflow: hidden;
+    transition: background-color 200ms;
+}
+
+.password-visibility-button-position-right {
+    position: absolute;
+    top: 0;
+    right: 8px;
+}
+
+.password-visibility-wrapper {
+    position: relative;
+}
+
+.recovery {
+    margin: 0.5rem 0 0;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.recovery a {
+    display: inline-block;
+    width: calc(80% / 2);
+}
+
+#main {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#pagetitle {
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+#pagetitle h2 {
+    font-weight: bold;
+    color: #6f6f6f;
+	font-size: 1.8rem;
+}
+
+h2.header {
+    font-size: 1.25rem;
+}
+
+input[type="radio"] {
+    box-shadow: none;
+	box-sizing: border-box;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 40px;
+    padding: 5px;
+    text-transform: none;
+}
+
+input[type="text"], input[type="password"], input[type="date"], input[type="number"], input[type="time"], select, .select2-selection {
+    box-shadow: none;
+	box-sizing: border-box;
+    border: 1px solid #bfbfbf !important;
+    border-radius: 5px !important;
+    font-size: 16px;
+    height: 40px !important;
+    padding: 5px;
+    width: 100%;
+    text-transform: none;
+}
+
+textarea {
+    box-shadow: none;
+	box-sizing: border-box;
+    border: 1px solid #bfbfbf !important;
+    border-radius: 5px !important;
+    font-size: 16px;
+    height: 160px !important;
+    padding: 5px;
+    width: 100%;
+    text-transform: none;
+	resize: none !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	height: 38px !important;
+}
+
+label {
+    margin-bottom: 0!important;
+}
+
+@media (min-width: 1100px)
+{
+	#main {
+		width: 900px !important;
+	}
+}
+
+@media (min-width: 768px)
+{
+	.btn-area {
+		width: 300px;
+	}
+	
+	.contents-box .input-title, .contents-box label {
+		font-size: 15px;
+	}
+	
+	.contents-box .row {
+		margin: 25px 0 0;
+	}
+	
+	.recovery a {
+		display: inline-block;
+		width: calc(300px / 2);
+	}
+	
+	#main {
+		width: 700px;
+	}
+	
+	#pagetitle h2 {
+		font-size: 2rem;
+	}
+}

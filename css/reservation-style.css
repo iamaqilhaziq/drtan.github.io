@@ -1,0 +1,243 @@
+@charset "utf-8";
+/* CSS Document */
+
+.card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.city, .state {
+	cursor: pointer;
+}
+
+.has-gutter, .is-w720 {
+    padding: 0 20px;
+	margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    -webkit-box-pack: justify;
+    line-height: 1;
+    margin: 0 auto;
+	flex-wrap: wrap !important;
+}
+
+.has-gutter section {
+	box-shadow: 0 0 15px 0 rgb(35 47 53 / 15%);
+	position: relative;
+    width: calc((100% / 3) - 24px);
+    text-align: center;
+	border: 0 solid #f1f6f7;
+    background: #f1f6f7;
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+.is-w720 section {
+	box-shadow: 0 0 15px 0 rgb(35 47 53 / 15%);
+	position: relative;
+    width: calc((100% / 6) - 24px);
+    text-align: center;
+	border: 0 solid #f1f6f7;
+    background: #f1f6f7;
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+.is-w720 section.city.active, .is-w720 section.state.active {
+    background: #E80015;
+}
+
+.is-w720 section.city.active .sectionHeader1, .is-w720 section.state.active .sectionHeader1 {
+    color: #f1f6f7;
+}
+
+.mb-48 {
+    margin-bottom: 48px;
+}
+
+.reservationItem {
+    display: block;
+    column-gap: 12px;
+    align-items: center;
+    padding: 16px 16px;
+    border: 1px solid #FF7D89;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    color: #E80015;
+}
+
+.reservationItem:hover {
+    text-decoration: none;
+    color: #E80015;
+}
+
+.reservationItem__title {
+    font-size: calc(0.4716981132vw + 0.8938679245rem);
+    font-weight: bold;
+}
+
+.reservationItem__to {
+    font-size: 0.75rem;
+    font-weight: bold;
+	margin: 0 !important;
+}
+
+.row__col {
+    padding: 8px;
+}
+
+.sectionHeader1 {
+    text-align: center;
+    color: #E80015;
+    font-size: calc(0.7075471698vw + 1.3408018868rem);
+    font-weight: normal;
+    line-height: 1.75;
+    letter-spacing: .08em;
+    font-feature-settings: "palt" 1;
+	flex: 1;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.sectionHeader2 {
+    text-align: center;
+    color: #E80015;
+    font-size: calc(0.7075471698vw + 1.3408018868rem);
+    border-bottom: 1px solid #dfdfdf;
+    padding-bottom: .4em;
+    font-weight: normal;
+    line-height: 1.75;
+    letter-spacing: .08em;
+    font-feature-settings: "palt" 1;
+	flex: 1;
+}
+
+#pagetitle {
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+#pagetitle h2 {
+    font-weight: bold;
+    color: #6f6f6f;
+	font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 1861px)
+{
+	.is-w720 section {
+		width: calc((100% / 5) - 24px);
+	}
+}
+
+@media only screen and (max-width: 1588px)
+{
+	.is-w720 section {
+		width: calc((100% / 4) - 24px);
+	}
+}
+
+@media only screen and (max-width: 991px)
+{
+	.has-gutter section {
+		width: calc((100% / 2) - 24px);
+	}
+	
+	.is-w720 section {
+		width: calc((100% / 3) - 24px);
+	}
+}
+
+@media screen and (min-width: 784px)
+{
+	.reservationItem {
+		padding: 30px 16px;
+	}
+	
+	.reservationItem__title {
+		font-size: 1.125rem;
+	}
+	
+	.reservationItem__to {
+		font-size: 0.75rem;
+	}
+
+	.row__col {
+		padding: 16px;
+	}
+	
+	.sectionHeader1 {
+		display: flex;
+		font-size: 1.6875rem;
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+	
+	.sectionHeader2 {
+		display: flex;
+		align-items: flex-start;
+		font-size: 1.6875rem;
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+	
+	.sectionHeader1:before, .sectionHeader1:after, .sectionHeader2:before, .sectionHeader2:after {
+		flex: 1;
+		content: "";
+	}
+	
+	.sectionHeader1>span, .sectionHeader2>span {
+		margin: 0 1em;
+	}
+}
+
+@media only screen and (max-width: 767px)
+{
+	.has-gutter {
+		display: block;
+		width: auto;
+		padding-right: 6.25%;
+		padding-left: 6.25%;
+		margin-bottom: 80px;
+	}
+	
+	.has-gutter section {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	.is-w720 {
+		padding-right: 6.25%;
+		padding-left: 6.25%;
+	}
+	
+	.is-w720 section {
+		width: calc((100% / 2) - 24px);
+	}
+}
+
+@media only screen and (max-width: 575px)
+{
+	.is-w720 {
+		display: block;
+		width: auto;
+	}
+	
+	.is-w720 section {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}

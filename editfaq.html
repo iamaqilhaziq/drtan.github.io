@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>EDIT FAQ PAGE | DR TAN LAN ENG</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/header-style.css">
+<link rel="stylesheet" href="css/auth-style.css">
+<link rel="stylesheet" href="css/registration-style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="images/ic_launcher.png" type="image/png">
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header class="l-header js-fixed-header">
+	<div class="p-header-pc u-hidden-sp">
+		<div class="p-header-pc__logo-wrap">
+			<div class="header__logo">
+				<div id="logo-main">
+					<a class="header__logo-mark">
+						<img src="images/logo.png" alt="DR TAN LAN ENG" class="header__logo-img">
+					</a>
+				</div>
+			</div>
+			<button class="header__menu-button" id="js-global-nav-btn">
+				<div class="menu-trigger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+		</div>
+		<div class="p-header-pc__links-wrap">
+			<ul class="p-header-pc__links">
+				<li><a href="manageinquiry.html">manage inquiry</a></li>
+				<li><a href="managefaq.html">manage faq</a></li>
+				<li><a href="manageoperationhour.html">manage operation hour</a></li>
+				<li><a href="manageappointment.html">manage appointment</a></li>
+				<li><a href="viewpatientlist.html">view patient list</a></li>
+				<li><a onClick="return confirm('Do you really want to logout?')" href="index.html">logout</a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+<script>
+$(document).ready(function() {
+  $("#js-global-nav-btn").on("click", function() {
+	if($("#js-global-nav-btn").hasClass('is-show-nav')){
+		$("#js-global-nav-btn").removeClass("is-show-nav");
+		$(".p-header-pc__links-wrap").removeClass("is-show");
+	}
+	else {
+		$("#js-global-nav-btn").addClass("is-show-nav");
+		$(".p-header-pc__links-wrap").addClass("is-show");
+	}
+  });
+});
+</script>
+<div class="pagecontent">
+	<div id="pagetitle">
+		<h2>EDIT FAQ</h2>
+	</div>
+	<div id="main" class="mgn-b-50">
+		<div class="contents-box container-fluid">
+			<div class="row account-id-row">
+				<div class="col-sm-4">
+					<div class="input-title">
+						<label for="faqno">
+							faq no
+						</label>
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<input type="text" name="faqno" size="25" maxlength="255" id="faqno" value="">
+					<div class="formError inline" style="opacity: 0.87;position: relative;top: 0px;left: 0px;margin-top: 0px;display: none;" id="faqno_box">
+						<div class="formErrorContent">
+							<font id="faqno_error"></font>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="input-title">
+						<label for="question">question</label>
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<input type="text" name="question" size="25" maxlength="74" id="question" value="">
+					<div class="formError inline" style="opacity: 0.87;position: relative;top: 0px;left: 0px;margin-top: 0px;display: none;" id="question_box">
+						<div class="formErrorContent">
+							<font id="question_error"></font>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="input-title">
+						<label for="answer">answer</label>
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<textarea name="answer" size="25" maxlength="555" id="answer"></textarea>
+					<div class="formError inline" style="opacity: 0.87;position: relative;top: 0px;left: 0px;margin-top: 0px;display: none;" id="answer_box">
+						<div class="formErrorContent">
+							<font id="answer_error"></font>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 mgn-t-10 text-center">
+					<div class="btn-area">
+						<a href="managefaq.html" class="btn btn-normal btn-lg btn-next btn-block">
+							<span>edit faq</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

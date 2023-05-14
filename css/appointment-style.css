@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+
+.continue {
+    position: relative;
+}
+
+.continue .btn-primary {
+    font-size: 20px;
+    color: #fff;
+    background: linear-gradient(to bottom right,#8C000C,#76000A);
+    border: none;
+	width: 100%;
+}
+
+.tag-item {
+    color: #454545;
+    font-size: 10px;
+    line-height: 1.5;
+    letter-spacing: .2px;
+    font-weight: 500;
+    border: 1px solid #B80010;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgb(0 114 145 / 1%);
+    padding: 8px 10px;
+    text-decoration: none;
+	width: calc((100% / 5) - 0.5rem);
+    text-align: center;
+}
+
+.tag-item.active, .tag-item:hover {
+    text-decoration: none;
+	background: #ffaa41;
+	color: #fff;
+	cursor: pointer;
+}
+
+.ui-corner-all.ui-state-hover.ui-datepicker-next-hover {
+	background: transparent !important;
+}
+
+.ui-datepicker {
+	width: 100% !important;
+}
+
+.ui-datepicker .ui-datepicker-title {
+	font-size: 1.5rem;
+}
+
+.ui-datepicker td {
+	padding: 0 !important;
+}
+
+.ui-datepicker td .ui-state-active {
+    background: #e8382f !important;
+	color: white !important;
+}
+
+.ui-datepicker td .ui-state-active.ui-state-hover {
+    background: #e8382f !important;
+	color: white !important;
+}
+
+.ui-datepicker td .ui-state-hover {
+    border: 1px solid #e8382f !important;
+	color: #e8382f !important;
+}
+
+.ui-datepicker td>* {
+	padding: 20px 0 !important;
+	text-align: center !important;
+	border: none !important;
+	border-bottom: 1px solid #e8ecf6 !important;
+	background: transparent !important;
+}
+
+.ui-datepicker th {
+	border-bottom: 3px solid #e8ecf6 !important;
+}
+
+.ui-datepicker-prev.ui-corner-all.ui-state-disabled {
+	display: none !important;
+}
+
+.ui-state-highlight {
+	color: #990000 !important;
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover {
+    border: none !important;
+}
+
+.ui-widget.ui-widget-content {
+    border: none !important;
+}
+
+.ui-widget-header {
+    border: none !important;
+    background: transparent !important;
+}
+
+.ui-widget-header a {
+	font-size: 25px;
+}
+
+@media (max-width: 991.98px)
+{
+	.ui-datepicker td>* {
+		padding: 10px 0 !important;
+	}
+}
+
+@media only screen and (max-width: 959px)
+{
+	.tag-item {
+		width: calc((100% / 4) - 0.5rem);
+	}
+}
+
+@media only screen and (max-width: 575px)
+{
+	.tag-item {
+		width: calc((100% / 3) - 0.5rem);
+	}
+}

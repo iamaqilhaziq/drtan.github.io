@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+.headingTypeB01 {
+    font-size: 1.286em;
+    position: relative;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #FF7A86;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.headingTypeB01 .num {
+    color: #F80016;
+    font-family: Times New Roman , "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", Hiragino Mincho ProN , "MSP明朝","MS PMincho","MS 明朝",serif;
+    font-size: 1.143em;
+    font-weight: normal;
+    padding-right: 14px;
+    position: relative;
+}
+
+.headingTypeB01 .heading {
+    position: relative;
+    line-height: 1.27273;
+    margin: 0 0 2rem;
+    padding-top: 28px;
+    color: #FF2135;
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+.lh2_0 {
+    line-height: 2;
+}
+
+.lh2_0 a, .lh2_0 a:hover {
+    color: #E50014;
+	text-decoration: underline;
+}
+
+.sectionHeader3s {
+    font-size: calc(0.4716981132vw + 0.8938679245rem);
+    font-weight: bold;
+    line-height: 1.75;
+    font-feature-settings: "palt" 1;
+}
+
+#container {
+    max-width: 1032px;
+    margin: 0 auto;
+    padding: 0px 20px 60px;
+}
+
+@media screen and (min-width: 784px)
+{
+	.sectionHeader3s {
+		font-size: 1.125rem;
+	}
+}

@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>RESERVATIONS SITE | DR TAN LAN ENG</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/header-style.css">
+<link rel="stylesheet" href="css/index-style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="images/ic_launcher.png" type="image/png">
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header class="l-header js-fixed-header">
+	<div class="p-header-pc u-hidden-sp">
+		<div class="p-header-pc__logo-wrap">
+			<div class="header__logo">
+				<div id="logo-main">
+					<a href="index.html" class="header__logo-mark">
+						<img src="images/logo.png" alt="DR TAN LAN ENG" class="header__logo-img">
+					</a>
+				</div>
+			</div>
+			<button class="header__menu-button" id="js-global-nav-btn">
+				<div class="menu-trigger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+		</div>
+		<div class="p-header-pc__links-wrap">
+			<ul class="p-header-pc__links">
+				<li><a href="index.html">home</a></li>
+				<li><a href="contact.html">contact us</a></li>
+				<li><a href="faq.html">faq</a></li>
+				<li><a href="beginner.html">for first-timers</a></li>
+				<li><a href="login.html">login</a></li>
+			</ul>
+		</div>
+		<div class="global-menu-button">
+			<div class="global-menu-button__buttons">
+				<a href="appointment.html" class="global-menu-button__button reservation">
+					<span class="global-menu-button__button-text">Online reservation</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</header>
+<script>
+$(document).ready(function() {
+  $("#js-global-nav-btn").on("click", function() {
+	if($("#js-global-nav-btn").hasClass('is-show-nav')){
+		$("#js-global-nav-btn").removeClass("is-show-nav");
+		$(".p-header-pc__links-wrap").removeClass("is-show");
+	}
+	else {
+		$("#js-global-nav-btn").addClass("is-show-nav");
+		$(".p-header-pc__links-wrap").addClass("is-show");
+	}
+  });
+});
+</script>
+<div class="pagecontent">
+	<h3 class="home-diagnosis__title">
+		List of Consultations
+	</h3>
+	<div class="bl_navPills bl_navPills__subjectSearch">
+		<section class="bl_navPills_section_main">
+			<ul class="bl_navPills_list">
+				<li class="bl_navPills_item js_searchWindow_open">
+					<div class="bl_navPills_imgWrapper">
+						<p class="el_btn_txt">Lung Cancer Treatment</p>
+					</div>
+				</li>
+				<li class="bl_navPills_item js_searchWindow_open">
+					<div class="bl_navPills_imgWrapper">
+						<p class="el_btn_txt">Pleural Tap</p>
+					</div>
+				</li>
+				<li class="bl_navPills_item js_searchWindow_open">
+					<div class="bl_navPills_imgWrapper">
+						<p class="el_btn_txt">Pleural Effusion Treatment</p>
+					</div>
+				</li>
+				<li class="bl_navPills_item js_searchWindow_open">
+					<div class="bl_navPills_imgWrapper">
+						<p class="el_btn_txt">Chemical Pleurodesis</p>
+					</div>
+				</li>
+				<li class="bl_navPills_item js_searchWindow_open">
+					<div class="bl_navPills_imgWrapper">
+						<p class="el_btn_txt">Chest Tube & Pigtail Insertion</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+	</div>
+	<h3 class="home-diagnosis__title">
+		News
+	</h3>
+	<ul class="entry-list">
+		<li>
+			<div class="entry-meta">
+				<time class="entry-date font-en">07.05.2023</time>
+			</div>
+			<div class="entry-title">Consultation on 10/6 (Sat) will be closed. Thank you for your understanding.</div>
+		</li>
+		<li>
+			<div class="entry-meta">
+				<time class="entry-date font-en">07.05.2023</time>
+			</div>
+			<div class="entry-title">Consultation on 10/6 (Sat) will be closed. Thank you for your understanding.</div>
+		</li>
+		<li>
+			<div class="entry-meta">
+				<time class="entry-date font-en">07.05.2023</time>
+			</div>
+			<div class="entry-title">Consultation on 10/6 (Sat) will be closed. Thank you for your understanding.</div>
+		</li>
+	</ul>
+	<p class="more">
+		<a class="btn btn-secondary">Click here for the list of announcements &gt;</a>
+	</p>
+	<h3 class="home-diagnosis__title">
+		Timing of the medical treatment
+	</h3>
+	<div id="timings-section" class="vc_row wpb_row vc_row-fluid timings-sec" style="position: relative; box-sizing: border-box; max-width: 1905px; text-align: center">
+		<div class="timing-box wpb_column vc_column_container vc_col-sm-4">
+			<div class="vc_column-inner">
+				<div class="wpb_wrapper">
+					<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+						<div class="wpb_wrapper">
+							<table class="timing-table-width">
+								<tbody>
+									<tr>
+										<td class="lable-day" width="45%">Monday</td>
+										<td class="lable-day-time right-txt" width="55%">8:00am – 6:30pm</td>
+									</tr>
+									<tr>
+										<td class="lable-day">Tuesday</td>
+										<td class="lable-day-time right-txt">8:00am – 6:30pm</td>
+									</tr>
+									<tr>
+										<td class="lable-day">Wednesday</td>
+										<td class="lable-day-time right-txt">8:00am – 6:30pm</td>
+									</tr>
+									<tr>
+										<td class="lable-day">Thursday</td>
+										<td class="lable-day-time right-txt">8:00am – 6:30pm</td>
+									</tr>
+									<tr>
+										<td class="lable-day">Friday</td>
+										<td class="lable-day-time right-txt">8:00am – 6:30pm</td>
+									</tr>
+									<tr>
+										<td class="lable-day">Saturday</td>
+										<td class="lable-day-time right-txt">9:00am – 1:00pm</td>
+									</tr>
+									<tr>
+										<td class="lable-day" width="55%">Sunday</td>
+										<td class="lable-day-time right-txt" style="text-align:right">Closed</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<h3 class="home-diagnosis__title">
+		Testimonials
+	</h3>
+	<div class="slider">
+		<div id="owl-demo" class="testimonial owl-carousel owl-theme" style="opacity: 1; display: block;">
+			<div class="owl-wrapper-outer autoHeight" style="min-height: 100%;">
+				<div class="owl-wrapper" style="max-width: 3600px; left: 0px; display: flex; transition: all 1000ms ease 0s; transform: translate3d(0px, 0px, 0px); justify-content: space-around; height: 100%; align-items: center">
+					<div class="owl-item" style="max-width: 730px;">
+						<div>
+							<div>
+								<p>
+									<em>This people has a special place in heaven; she were great with my mother. She passed away last year but I cannot say how much I appreciated the care you give to my mother, she were always so personal, and compassionate.</em>
+								</p>
+								<p>- Name</p>
+							</div>
+						</div>
+					</div>
+					<div class="owl-item" style="max-width: 730px;">
+						<div>
+							<div>
+								<p>
+									<em>If you need help… this is the place. Thank you from the bottom of my heart for helping with my mom. We couldn’t have done it without you.</em>
+								</p>
+								<p>- Name</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="owl-controls clickable">
+				<div class="owl-buttons">
+					<div class="owl-prev" onclick="plusSlides(-1)"></div>
+					<div class="owl-next" onclick="plusSlides(1)"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="footer-social js-footer-social">
+		<div class="container">
+			<a class="footer-social__link" target="_blank">
+				<i class="icon-social-facebook" role="img" aria-label="Facebook Icon"></i>
+			</a>
+			<a class="footer-social__link" target="_blank">
+				<i class="icon-social-twitter" role="img" aria-label="Twitter Icon"></i>
+			</a>
+			<a class="footer-social__link" target="_blank">
+				<i class="icon-social-youtube" role="img" aria-label="YouTube Icon"></i>
+			</a>
+			<a class="footer-social__link" target="_blank">
+				<i class="icon-social-instagram" role="img" aria-label="Instagram Icon"></i>
+			</a>
+			<a class="footer-social__link" target="_blank">
+				<i class="icon-social-linkedin" role="img" aria-label="LinkedIn Icon"></i>
+			</a>
+		</div>
+	</section>
+</div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("owl-item");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/header-style.css">
+<link rel="stylesheet" href="css/login-style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="images/ic_launcher.png" type="image/png">
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header class="l-header js-fixed-header">
+	<div class="p-header-pc u-hidden-sp">
+		<div class="p-header-pc__logo-wrap">
+			<div class="header__logo">
+				<div id="logo-main">
+					<a href="index.html" class="header__logo-mark">
+						<img src="images/logo.png" alt="DR TAN LAN ENG" class="header__logo-img">
+					</a>
+				</div>
+			</div>
+			<button class="header__menu-button" id="js-global-nav-btn">
+				<div class="menu-trigger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+		</div>
+		<div class="p-header-pc__links-wrap">
+			<ul class="p-header-pc__links">
+				<li><a href="index.html">home</a></li>
+				<li><a href="contact.html">contact us</a></li>
+				<li><a href="faq.html">faq</a></li>
+				<li><a href="beginner.html">for first-timers</a></li>
+				<li><a href="login.html">login</a></li>
+			</ul>
+		</div>
+		<div class="global-menu-button">
+			<div class="global-menu-button__buttons">
+				<a href="appointment.html" class="global-menu-button__button reservation">
+					<span class="global-menu-button__button-text">Online reservation</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</header>
+<script>
+$(document).ready(function() {
+  $("#js-global-nav-btn").on("click", function() {
+	if($("#js-global-nav-btn").hasClass('is-show-nav')){
+		$("#js-global-nav-btn").removeClass("is-show-nav");
+		$(".p-header-pc__links-wrap").removeClass("is-show");
+	}
+	else {
+		$("#js-global-nav-btn").addClass("is-show-nav");
+		$(".p-header-pc__links-wrap").addClass("is-show");
+	}
+  });
+});
+</script>
+<div class="pagecontent">
+	<div id="page_block3" style="width:100vw; margin:0;">
+		<div class="memberLogin_wrap">
+			<!-- 左カラム -->
+			<div class="member_contents">
+				<div class="member_wrap">
+					<div class="title">
+						<h1>members</h1>
+					</div>
+					<p class="txt">IF YOU HAVE REGISTERED AS A MEMBER, YOU CAN USE YOUR ACCOUNT.</p>
+					<div class="btn">
+						<a href="auth.html">login</a>
+					</div>
+				</div>
+			</div>
+			<!-- 右カラム -->
+			<div class="not_member_contents">
+				<div class="member_wrap">
+					<h2>if you haven't registered yet</h2>
+					<p class="txt">when you become a member ...?</p>
+					<ul>
+						<li>
+							<span class="font_color" _istranslated="1">input easy! </span>book now
+						</li>
+						<li>
+							change <span class="font_color" _istranslated="1">or cancel</span> reservations
+						</li>
+						<li>
+							check <span class="font_color" _istranslated="1">the reservation history</span>
+						</li>
+					</ul>
+					<p class="new_member">
+						<a href="registration.html">membership registration</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

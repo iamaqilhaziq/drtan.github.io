@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* CSS Document */
+
+.text-box p {
+    margin: 0 !important;
+	text-align: center;
+}

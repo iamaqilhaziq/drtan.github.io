@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+
+.contents-box .col-sm-4, .contents-box .col-sm-8, .contents-box .col-sm-12 {
+	padding: 0 !important
+}
+
+.gender {
+	display: flex;
+	align-items: center;
+}
+
+.password-conditions {
+    background: #f2f2f2;
+    border-radius: 4px;
+    padding: 4px 8px 3px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.password-conditions-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+
+.password-conditions-list-item {
+    display: flex;
+    margin-bottom: 1px;
+    flex-basis: 100%;
+	align-items: center;
+}
+
+.password-conditions-list-icon {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.password-conditions-list-icon-filled {
+    background-color: #6ec800;
+    border-color: #6ec800;
+    color: #fff;
+}
+
+.password-conditions-list-icon-filled.password-conditions-list-icon-inactive {
+    background-color: #aaa;
+    border-color: #aaa;
+    color: #fff;
+}
+
+.password-conditions-list-txt {
+    color: #333;
+    -webkit-box-flex: 1;
+    flex: 1 1 0;
+    font-size: 12px;
+    line-height: 1.4;
+    margin-right: 6px;
+    text-align: left;
+}
+
+#member_sex_1, #pharmacy_1 {
+    margin-left: 20px;
+}
+
+#privacy h4 {
+    margin: 20px auto 10px;
+    font-weight: bold;
+    font-size: 15px;
+	text-align: center;
+}
+
+input[type=radio] {
+    margin: 0 4px 0 0;
+}

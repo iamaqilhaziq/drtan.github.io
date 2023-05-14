@@ -1,0 +1,186 @@
+@charset "utf-8";
+/* CSS Document */
+
+.fade:not(.show) {
+    opacity: 0;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+	padding: 0 !important;
+}
+.fade {
+    transition: opacity .15s linear;
+}
+
+.modal-dialog {
+    max-width: 686px!important;
+	top: calc((100% / 2) - ((756px + 1.75rem + 1.75rem) / 2));
+    transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+    transform: translate(0,-50px);
+}
+
+#patientModal .modal-dialog {
+	top: calc((100% / 2) - ((537px + 1.75rem + 1.75rem) / 2)) !important;
+}
+	
+@media (min-width: 576px)
+{.modal-dialog {
+    min-width: 500px !important;
+}}
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0 .5rem;
+    pointer-events: none;
+}
+
+.modal-content {
+    border-radius: 8px;
+    border: 0!important;
+}
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    outline: 0;
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba(21,27,57,.25);
+    box-shadow: none;
+    padding: 0 15px;
+    text-align: left;
+    line-height: 42px;
+    border-radius: 0;
+}
+.modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.modal-title {
+    color: #151b39;
+    font-size: 16px;
+    font-family: LatoBold;
+    margin-bottom: 0;
+    min-height: 1em;
+    overflow-wrap: break-word;
+    line-height: 42px;
+    border-bottom: 0;
+    padding: 0;
+}
+
+.modal-header h1 {
+    letter-spacing: .25px;
+    display: block;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.close {
+    color: #151b39;
+    opacity: 1;
+    padding: 0!important;
+    margin: 0!important;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: LatoWbBold;
+    outline: 0;
+}
+
+button.close {
+    background-color: transparent;
+    border: 0;
+    appearance: none;
+}
+.close {
+    float: right;
+    line-height: 1;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+}
+
+fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copy, .copy:hover {
+	cursor: pointer;
+	color: black;
+}
+
+#referral_link .control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.testi-btn {
+    width: max-content;
+}
+
+.form-btn {
+    background: #1f97a0;
+    border: medium none;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    height: 34px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 34px;
+	white-space: pre;
+}
+
+.borang-control {
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border: 1px solid #e0e0e0!important;
+    border-radius: 0;
+    color: #58595b;
+    display: block;
+    font-size: 13px;
+    padding: 0 10px;
+    width: 100%;
+    height: 34px;
+}
+
+.borang-control {
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+    background-clip: padding-box;
+}
+
+@media (min-width: 576px)
+{.col-sm-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 100% !important;
+}}

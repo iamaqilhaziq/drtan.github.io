@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MANAGE FAQ PAGE | DR TAN LAN ENG</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/header-style.css">
+<link rel="stylesheet" href="css/hospital-style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="images/ic_launcher.png" type="image/png">
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header class="l-header js-fixed-header">
+	<div class="p-header-pc u-hidden-sp">
+		<div class="p-header-pc__logo-wrap">
+			<div class="header__logo">
+				<div id="logo-main">
+					<a class="header__logo-mark">
+						<img src="images/logo.png" alt="DR TAN LAN ENG" class="header__logo-img">
+					</a>
+				</div>
+			</div>
+			<button class="header__menu-button" id="js-global-nav-btn">
+				<div class="menu-trigger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+		</div>
+		<div class="p-header-pc__links-wrap">
+			<ul class="p-header-pc__links">
+				<li><a href="manageinquiry.html">manage inquiry</a></li>
+				<li><a href="managefaq.html">manage faq</a></li>
+				<li><a href="manageoperationhour.html">manage operation hour</a></li>
+				<li><a href="manageappointment.html">manage appointment</a></li>
+				<li><a href="viewpatientlist.html">view patient list</a></li>
+				<li><a onClick="return confirm('Do you really want to logout?')" href="index.html">logout</a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+<script>
+$(document).ready(function() {
+  $("#js-global-nav-btn").on("click", function() {
+	if($("#js-global-nav-btn").hasClass('is-show-nav')){
+		$("#js-global-nav-btn").removeClass("is-show-nav");
+		$(".p-header-pc__links-wrap").removeClass("is-show");
+	}
+	else {
+		$("#js-global-nav-btn").addClass("is-show-nav");
+		$(".p-header-pc__links-wrap").addClass("is-show");
+	}
+  });
+});
+</script>
+<div class="pagecontent">
+	<div id="pagetitle" class="labelheader">
+		<h2>MANAGE FAQ</h2>
+		<div id="group">
+			<a href="addfaq.html"><button id="btnNew">Add New FAQ</button></a>
+		</div>
+	</div>
+	<div class="whitescreen" style="border-color:Blue; border:2px solid #a1a1a1;">
+		<div class="clinical">
+			<table class="clinical_table" cellspacing="0" cellpadding="4" rules="all" border="1" id="Grd_Search" style="background-color:White;border-color:Black;border-width:1px;border-style:Solid;width:100%;border-collapse:collapse;">
+				<thead>
+					<tr style="color:Black;background-color:#FF808B;">
+						<th scope="col" style="color:White;border-width:1px;border-style:solid;width:50px;">No</th>
+						<th scope="col" style="color:White;border-width:1px;border-style:solid;">Question</th>
+						<th scope="col" style="color:White;border-width:1px;border-style:solid;">Answer</th>
+						<th colspan="2" scope="col" style="color:White;border-width:1px;border-style:solid;">Action</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid; text-align: center">1</td>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid;">
+							<span class="normaltxt" style="color:#082023;font-size:Small;">can i make an online appointment by email or phone?</span>
+						</td>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid;">
+							<span class="normaltxt" style="color:#082023;font-size:Small;">Currently, we do not accept online appointments by email or phone. For new reservation, please select your preferred clinic and make a reservation.<br />
+							<br />
+							If you can't make a reservation from the page above, try changing the device (PC/smartphone) you are accessing or changing your browser (Safari or Google Chrome).<br />
+							<br />
+							If you still can't, please contact online support with the following:<br />
+							<br />
+							1. your name<br />
+							2. your device (iPhone11, Sony smartphone, etc. should be described in detail)<br />
+							3. your browser</span>
+						</td>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid; text-align: center; border-right: none">
+							<a href="editfaq.html" style="color:#082023;font-size:Small;">Edit</a>
+						</td>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid; text-align: center; border-left: none">
+							<a onClick="return confirm('Are you sure to delete the faq record?')" style="color:#082023;font-size:Small;">Delete</a>
+						</td>
+					</tr>
+					<tr>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid; text-align: center">2</td>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid;">
+							<span class="normaltxt" style="color:#082023;font-size:Small;">where can i change or cancel my reservation?</span>
+						</td>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid;">
+							<span class="normaltxt" style="color:#082023;font-size:Small;">please log in<br />
+							<br />
+							we do not accept reservation changes or cancellations by e-mail or telephone</span>
+						</td>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid; text-align: center; border-right: none">
+							<a href="editfaq.html" style="color:#082023;font-size:Small;">Edit</a>
+						</td>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid; text-align: center; border-left: none">
+							<a onClick="return confirm('Are you sure to delete the faq record?')" style="color:#082023;font-size:Small;">Delete</a>
+						</td>
+					</tr>
+					<tr>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid; text-align: center">3</td>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid;">
+							<span class="normaltxt" style="color:#082023;font-size:Small;">is it possible to make an online reservation even ...</span>
+						</td>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid;">
+							<span class="normaltxt" style="color:#082023;font-size:Small;">patients who visit for the first time can also make appointments for medical care via the internet.</span>
+						</td>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid; text-align: center; border-right: none">
+							<a href="editfaq.html" style="color:#082023;font-size:Small;">Edit</a>
+						</td>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid; text-align: center; border-left: none">
+							<a onClick="return confirm('Are you sure to delete the faq record?')" style="color:#082023;font-size:Small;">Delete</a>
+						</td>
+					</tr>
+					<tr>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid; text-align: center">4</td>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid;">
+							<span class="normaltxt" style="color:#082023;font-size:Small;">what is the benefit to signing up?</span>
+						</td>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid;">
+							<span class="normaltxt" style="color:#082023;font-size:Small;">view the medical information</span>
+						</td>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid; text-align: center; border-right: none">
+							<a href="editfaq.html" style="color:#082023;font-size:Small;">Edit</a>
+						</td>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid; text-align: center; border-left: none">
+							<a onClick="return confirm('Are you sure to delete the faq record?')" style="color:#082023;font-size:Small;">Delete</a>
+						</td>
+					</tr>
+					<tr>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid; text-align: center">5</td>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid;">
+							<span class="normaltxt" style="color:#082023;font-size:Small;">is my information secure?</span>
+						</td>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid;">
+							<span class="normaltxt" style="color:#082023;font-size:Small;">Yes. your information safe from unauthorized users.</span>
+						</td>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid; text-align: center; border-right: none">
+							<a href="editfaq.html" style="color:#082023;font-size:Small;">Edit</a>
+						</td>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid; text-align: center; border-left: none">
+							<a onClick="return confirm('Are you sure to delete the faq record?')" style="color:#082023;font-size:Small;">Delete</a>
+						</td>
+					</tr>
+					<tr>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid; text-align: center">6</td>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid;">
+							<span class="normaltxt" style="color:#082023;font-size:Small;">how do i sign up?</span>
+						</td>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid;">
+							<span class="normaltxt" style="color:#082023;font-size:Small;">Click Login on the right-hand menu, and click Membership Registration. Follow the instructions to sign up.</span>
+						</td>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid; text-align: center; border-right: none">
+							<a href="editfaq.html" style="color:#082023;font-size:Small;">Edit</a>
+						</td>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid; text-align: center; border-left: none">
+							<a onClick="return confirm('Are you sure to delete the faq record?')" style="color:#082023;font-size:Small;">Delete</a>
+						</td>
+					</tr>
+					<tr>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid; text-align: center">7</td>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid;">
+							<span class="normaltxt" style="color:#082023;font-size:Small;">how can i get help if i have a question?</span>
+						</td>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid;">
+							<span class="normaltxt" style="color:#082023;font-size:Small;">click the Contact Us page at the top of the screen . After you submit the form, you will receive a response via email within two business days.</span>
+						</td>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid; text-align: center; border-right: none">
+							<a href="editfaq.html" style="color:#082023;font-size:Small;">Edit</a>
+						</td>
+						<td style="border-color:#FF1329;border-width:1px;border-style:Solid; text-align: center; border-left: none">
+							<a onClick="return confirm('Are you sure to delete the faq record?')" style="color:#082023;font-size:Small;">Delete</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+</body>
+</html>

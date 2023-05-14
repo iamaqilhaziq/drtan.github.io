@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>NEW MEMBERSHIP REGISTRATION PAGE | DR TAN LAN ENG</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/header-style.css">
+<link rel="stylesheet" href="css/auth-style.css">
+<link rel="stylesheet" href="css/registration-style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="images/ic_launcher.png" type="image/png">
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header class="l-header js-fixed-header">
+	<div class="p-header-pc u-hidden-sp">
+		<div class="p-header-pc__logo-wrap">
+			<div class="header__logo">
+				<div id="logo-main">
+					<a href="index.html" class="header__logo-mark">
+						<img src="images/logo.png" alt="DR TAN LAN ENG" class="header__logo-img">
+					</a>
+				</div>
+			</div>
+			<button class="header__menu-button" id="js-global-nav-btn">
+				<div class="menu-trigger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+		</div>
+		<div class="p-header-pc__links-wrap">
+			<ul class="p-header-pc__links">
+				<li><a href="index.html">home</a></li>
+				<li><a href="contact.html">contact us</a></li>
+				<li><a href="faq.html">faq</a></li>
+				<li><a href="beginner.html">for first-timers</a></li>
+				<li><a href="login.html">login</a></li>
+			</ul>
+		</div>
+		<div class="global-menu-button">
+			<div class="global-menu-button__buttons">
+				<a href="appointment.html" class="global-menu-button__button reservation">
+					<span class="global-menu-button__button-text">Online reservation</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</header>
+<script>
+$(document).ready(function() {
+  $("#js-global-nav-btn").on("click", function() {
+	if($("#js-global-nav-btn").hasClass('is-show-nav')){
+		$("#js-global-nav-btn").removeClass("is-show-nav");
+		$(".p-header-pc__links-wrap").removeClass("is-show");
+	}
+	else {
+		$("#js-global-nav-btn").addClass("is-show-nav");
+		$(".p-header-pc__links-wrap").addClass("is-show");
+	}
+  });
+});
+</script>
+<div class="pagecontent">
+	<div id="pagetitle">
+		<h2>NEW MEMBER REGISTRATION</h2>
+	</div>
+	<div id="main" class="mgn-b-50">
+		<div class="contents-box container-fluid">
+			<div class="row account-id-row">
+				<div class="col-sm-4">
+					<div class="input-title">
+						<label for="auth_register_email">
+							email address
+						</label>
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<input type="text" name="email" size="25" maxlength="255" id="auth_register_email" placeholder="example: sample@example.com">
+					<div class="formError inline" style="opacity: 0.87;position: relative;top: 0px;left: 0px;margin-top: 0px;display: none;" id="email_box">
+						<div class="formErrorContent">
+							<font id="email_error"></font>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="input-title">
+						<label for="auth_register_password">password</label>
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<div class="password-visibility-wrapper js-target-password-visibility-wrapper">
+						<input type="password" name="password" id="password" class="password-textfield-has-password-visibility-button js-target-password-textfield" autocapitalize="off" maxlength="32">
+						<div class="formError inline" style="opacity: 0.87;position: relative;top: 0px;left: 0px;margin-top: 0px;display: none;" id="password_box">
+							<div class="formErrorContent">
+								<font id="password_error"></font>
+							</div>
+						</div>
+						<button type="button" class="password-visibility-button password-visibility-button-position-right js-make-visible-password js-target-password-visibility-off-button" id="showpassword" onClick="showPassword()">
+							<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="currentColor"><path d="M0 0h24v24H0zm0 0h24v24H0zm0 0h24v24H0zm0 0h24v24H0z" fill="none"></path><path d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46C3.08 8.3 1.78 10.02 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm4.31-.78l3.15 3.15.02-.16c0-1.66-1.34-3-3-3l-.17.01z"></path></svg>
+						</button>
+						<button type="button" class="password-visibility-button password-visibility-button-position-right js-make-invisible-password js-target-password-visibility-on-button" style="display: none;" id="hidepassword" onClick="hidePassword()">
+							<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="currentColor"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="row mgn-t-10">
+				<div class="col-sm-12">
+					<div class="password-conditions">
+						<ul class="password-conditions-list">
+							<li class="password-conditions-list-item js-target-password-conditions-item">
+								<span class="password-conditions-list-icon password-conditions-list-icon-filled password-conditions-list-icon-inactive js-target-password-conditions-icon" id="passwordrequirement1">
+									<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"><polyline points="20 6 9 17 4 12"></polyline></svg>
+								</span>
+								<span class="password-conditions-list-txt">8 characters or more</span>
+							</li>
+							<li class="password-conditions-list-item js-target-password-conditions-item">
+								<span class="password-conditions-list-icon password-conditions-list-icon-filled password-conditions-list-icon-inactive js-target-password-conditions-icon" id="passwordrequirement2">
+									<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"><polyline points="20 6 9 17 4 12"></polyline></svg>
+								</span>
+								<span class="password-conditions-list-txt">use of letters (uppercase or lowercase letters) and numbers</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="input-title">
+						<label for="auth_register_name">your name</label>
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<input type="text" name="name" size="25" maxlength="32" id="auth_register_name">
+					<div class="formError inline" style="opacity: 0.87;position: relative;top: 0px;left: 0px;margin-top: 0px;display: none;" id="name_box">
+						<div class="formErrorContent">
+							<font id="name_error"></font>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="input-title">
+						<label for="member_tel">phone number</label>
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<input type="text" name="member_tel" size="25" maxlength="11" id="member_tel" placeholder="example: 0132345678">
+					<div class="formError inline" style="opacity: 0.87;position: relative;top: 0px;left: 0px;margin-top: 0px;display: none;" id="phone_box">
+						<div class="formErrorContent">
+							<font id="phone_error"></font>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="input-title">
+						<label for="member_birthday">date of birth</label>
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<input type="date" name="member_birthday" size="25" id="member_birthday" onkeydown="return false">
+					<div class="formError inline" style="opacity: 0.87;position: relative;top: 0px;left: 0px;margin-top: 0px;display: none;" id="dob_box">
+						<div class="formErrorContent">
+							<font id="dob_error"></font>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="input-title">
+						<label for="member_sex">gender</label>
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<div class="gender">
+						<input type="radio" name="member_sex" size="25" id="member_sex_0" value="Female">
+						<label for="member_sex_0" class="labelnote">woman</label>
+						<input type="radio" name="member_sex" size="25" id="member_sex_1" value="Male">
+						<label for="member_sex_1" class="labelnote">man</label>
+					</div>
+					<div class="formError inline" style="opacity: 0.87;position: relative;top: 0px;left: 0px;margin-top: 0px;display: none;" id="gender_box">
+						<div class="formErrorContent">
+							<font id="gender_error"></font>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="input-title">
+						<label for="member_nick_name">nickname</label>
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<input type="text" name="member_nick_name" size="25" maxlength="64" id="member_nick_name">
+					<div class="formError inline" style="opacity: 0.87;position: relative;top: 0px;left: 0px;margin-top: 0px;display: none;" id="nickname_box">
+						<div class="formErrorContent">
+							<font id="nickname_error"></font>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 mgn-t-10 text-center">
+					<div class="btn-area">
+						<a href="register_member_complete.html" class="btn btn-normal btn-lg btn-next btn-block">
+							<span>register</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row login-attach-row">
+				<div class="col-sm-12 mgn-b-5">
+					<hr class="login-dashed-line">
+					<h2 class="header center">
+						<p>
+							You Have An Account?
+						</p>
+					</h2>
+					<div class="col-sm-8 col-sm-offset-2">
+						<a href="auth.html" class="btn btn-primary btn-lg btn-block">please log in here</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+function showPassword(){
+	document.getElementById("showpassword").style.display = "none";
+	document.getElementById("hidepassword").style.display = "block";
+	
+	var z = document.getElementById("password");
+
+	z.type = "text";
+}
+function hidePassword(){
+	document.getElementById("showpassword").style.display = "block";
+	document.getElementById("hidepassword").style.display = "none";
+	
+	var z = document.getElementById("password");
+
+	z.type = "password";
+}
+</script>
+</body>
+</html>
