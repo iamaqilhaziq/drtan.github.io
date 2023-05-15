@@ -399,3 +399,10 @@ table.timing-table-width {
 		width: calc((100%/3) - 32px);
 	}
 }
+
+@media screen and (max-width: 531px)
+{
+	.bl_navPills.bl_navPills__subjectSearch .bl_navPills_list .bl_navPills_item {
+		width: calc((100%/2) - 32px);
+	}
+}
