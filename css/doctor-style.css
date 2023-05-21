@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* CSS Document */
+
+.credentials__item {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.credentials__label {
+    font-size: 13px;
+    line-height: 15px;
+    display: inline;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #363636;
+    margin-right: .70313rem;
+	letter-spacing: .1em;
+}
+
+.dr-list {
+    background: #F7B8B5;
+    position: relative;
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+.dr-list-image {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    height: 100%;
+    background: #F9CFCC;
+	text-align: center;
+}
+
+.dr-list-image img {
+    margin: auto;
+	max-width: 100%;
+}
+
+.dr-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    position: relative;
+    z-index: 2;
+}
+
+.dr-list-txtarea {
+    width: 100%;
+    display: block;
+    padding: 30px 30px 30px;
+}
+
+.l-1col {
+    clear: left;
+    width: 100%;
+    margin-left: 0;
+    margin-right: -100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.nav--bio__desktop-tabs {
+    z-index: 99999;
+    display: block;
+    background-color: #57585f;
+    width: 100%;
+    text-align: center;
+    padding: .46875rem 0;
+    margin: .46875rem 0;
+}
+
+.nav--bio__desktop-tab-item {
+    font-size: 18px;
+    line-height: 30px;
+    display: inline-block;
+    font-family: Source Sans Pro,News Cycle,sans-serif;
+    font-weight: 700;
+    border-radius: 3px;
+    padding: .25em .5em;
+    color: #fff !important;
+}
+
+.nav--bio__desktop-tab-item:hover {
+    text-decoration: none;
+}
+
+.nav--bio__desktop-tab-item~.nav--bio__desktop-tab-item {
+    margin-left: 1em;
+}
+
+.profCont {
+    padding-bottom: 23px;
+    padding-top: 25px;
+    margin: 0 20px;
+}
+
+.profCont + .profCont {
+    border-color: #ffbf36;
+    border-top: 1px solid #EF766F;
+}
+
+.profCont .heading {
+    line-height: 1.3;
+    margin: 0 0 12px;
+    color: #5E5E5E;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.profName {
+    position: relative;
+    line-height: 1;
+    margin: 0 0 22px;
+    color: #5e5e5e;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+@media (max-width: 904px)
+{
+	.dr-list-image {
+		max-width: none;
+	}
+	
+	.dr-list-item {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 612px)
+{
+	.nav--bio__desktop-tabs {
+		display: none;
+	}
+}

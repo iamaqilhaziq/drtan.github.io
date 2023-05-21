@@ -1,6 +1,18 @@
 @charset "utf-8";
 /* CSS Document */
 
+.app-section__content>:first-child {
+    margin-top: 0;
+}
+
+.app-section__content h2 {
+    padding-top: 0;
+}
+
+.app-section__description {
+    color: #4c6272;
+}
+
 .bl_navPills {
     display: block;
 	width: 100%;
@@ -120,6 +132,16 @@
 
 .footer-social__link {
     display: inline-block;
+}
+
+.grid-column-full {
+    box-sizing: border-box;
+    padding: 0 16px;
+}
+
+.grid-row {
+    margin-left: -16px;
+    margin-right: -16px;
 }
 
 .home-diagnosis__title {
@@ -328,6 +350,13 @@
     padding-right: 0 !important;
 }
 
+.width-container {
+    margin: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .wpb_wrapper > div {
     margin-bottom: 0 !important;
 }
@@ -340,6 +369,18 @@ table.timing-table-width {
     margin-bottom: 10px;
 }
 
+@media (min-width: 48.0625em)
+{
+	.grid-column-full {
+		float: left;
+		width: 100%;
+	}
+	
+	.width-container {
+		margin: 0 32px;
+	}
+}
+
 @media screen and (max-width: 1543px)
 {
 	.bl_navPills.bl_navPills__subjectSearch .bl_navPills_list .bl_navPills_item {
@@ -347,7 +388,7 @@ table.timing-table-width {
 	}
 }
 
-@media screen and (max-width: 946px)
+@media screen and (max-width: 1245px)
 {
 	.bl_navPills.bl_navPills__subjectSearch .bl_navPills_list .bl_navPills_item {
 		width: calc((100%/6) - 32px);
@@ -359,6 +400,13 @@ table.timing-table-width {
 	
 	.vc_col-sm-4 {
 		width: 44.333333% !important;
+	}
+}
+
+@media screen and (max-width: 1114px)
+{
+	.bl_navPills.bl_navPills__subjectSearch .bl_navPills_list .bl_navPills_item {
+		width: calc((100%/5) - 32px);
 	}
 }
 
@@ -378,7 +426,7 @@ table.timing-table-width {
 	}
 }
 
-@media screen and (max-width: 684px)
+@media screen and (max-width: 846px)
 {
 	.bl_navPills.bl_navPills__subjectSearch .bl_navPills_list .bl_navPills_item {
 		width: calc((100%/4) - 32px);
@@ -393,7 +441,7 @@ table.timing-table-width {
 	}
 }
 
-@media screen and (max-width: 578px)
+@media screen and (max-width: 785px)
 {
 	.bl_navPills.bl_navPills__subjectSearch .bl_navPills_list .bl_navPills_item {
 		width: calc((100%/3) - 32px);

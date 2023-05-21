@@ -2,10 +2,11 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>login</title>
+<title>DOCTOR | DR TAN LAN ENG</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/header-style.css">
-<link rel="stylesheet" href="css/login-style.css">
+<link rel="stylesheet" href="css/auth-style.css">
+<link rel="stylesheet" href="css/doctor-style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="images/ic_launcher.png" type="image/png">
 <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -65,43 +66,51 @@ $(document).ready(function() {
 });
 </script>
 <div class="pagecontent">
-	<div id="page_block3" style="width:100vw; margin:0;">
-		<div class="memberLogin_wrap">
-			<!-- 左カラム -->
-			<div class="member_contents">
-				<div class="member_wrap">
-					<div class="title">
-						<h1>members</h1>
-					</div>
-					<p class="txt">IF YOU HAVE REGISTERED AS A MEMBER, YOU CAN USE YOUR ACCOUNT.</p>
-					<div class="btn">
-						<a href="auth.html">login</a>
-					</div>
-				</div>
-			</div>
-			<!-- 右カラム -->
-			<div class="not_member_contents">
-				<div class="member_wrap">
-					<h2>if you haven't registered yet</h2>
-					<p class="txt">when you become a member ...?</p>
-					<ul>
-						<li>
-							<span class="font_color" _istranslated="1">input easy! </span>book now
-						</li>
-						<li>
-							change <span class="font_color" _istranslated="1">or cancel</span> reservations
-						</li>
-						<li>
-							check <span class="font_color" _istranslated="1">the reservation history</span>
-						</li>
-					</ul>
-					<p class="new_member">
-						<a href="registration.html">membership registration</a>
-					</p>
+	<div id="pagetitle">
+		<h2>YOUR DOCTOR</h2>
+	</div>
+	<div class="dr-list">
+		<div class="dr-list-item">
+			<span class="dr-list-image">
+				<img src="images/logo.png" alt="" title="" style="opacity: 1;">
+			</span>
+			<div class="dr-list-txtarea">
+				<h3 class="profName">
+					<font> Dr. Shirley Tan Lan Eng </font>
+				</h3>
+				<div class="header--bio__credentials">
+					<span class="credentials__label">Languages</span>
+					<span class="credentials__item">Cantonese, English, Malay, Mandarin</span>
 				</div>
 			</div>
 		</div>
 	</div>
+	<nav class="nav--bio__desktop-tabs">
+		<div class="l-1col ">
+			<a href="#biography" class="nav--bio__desktop-tab-item">Biography</a>
+			<a href="#academic" class="nav--bio__desktop-tab-item">Academic Background</a>
+			<a href="#career" class="nav--bio__desktop-tab-item">Career</a>
+			<a href="#qualifications" class="nav--bio__desktop-tab-item">Qualifications</a>
+		</div>
+	</nav>
+	<section class="profCont" id="biography">
+		<h4 class="heading">Biography</h4>
+		<p class="lh2_0">
+		<p class="lh2_0">Dr Shirley Tan is currently practising as a Consultant Respiratory Medicine Physician in Thomson Hospital Kota Damansara. She graduated from National Taiwan University and further pursued her specialization in Respiratory Medicine in Taiwan Society Pulmonary and Critical Care Medicine.</p></p>
+	</section>
+	<section class="profCont" id="academic">
+		<h4 class="heading">Academic Background</h4>
+		<p class="lh2_0"></p>
+	</section>
+	<section class="profCont" id="career">
+		<h4 class="heading">Career</h4>
+		<p class="lh2_0"></p>
+	</section>
+	<section class="profCont" id="qualifications">
+		<h4 class="heading">Qualifications</h4>
+		<p class="lh2_0">
+		<p class="lh2_0">MD (Taiwan) , FCCP (USA) , AM (Mal)</p></p>
+	</section>
 </div>
 </body>
 </html>
